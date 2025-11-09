@@ -1,35 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team HBV Irvington</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Team HBV Irvington — Home</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header>
-    <img src="images/logo.png" alt="Team HBV Irvington Logo" class="logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="officers.html">Officers</a>
-        <a href="recaps.html">Meeting Recaps</a>
-        <a href="events.html">Events & Deadlines</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-<main>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo-link" href="index.html">
+        <img src="images/logo.png" alt="Team HBV Irvington logo" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="officers.html" class="nav-link">Officers</a>
+        <a href="recaps.html" class="nav-link">Meeting Recaps</a>
+        <a href="events.html" class="nav-link">Events & Deadlines</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="external-buttons">
+        <button id="btn-instagram" class="btn-icon" aria-label="Instagram">
+          <!-- SVG icon -->
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"></path></svg>
+        </button>
+        <a class="btn-ghost" href="mailto:teamhbvirvington@gmail.com" title="Email Team HBV Irvington" target="_blank" rel="noopener">Email</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
     <section class="hero">
-        <h1>Welcome to Team HBV Irvington</h1>
-        <p>Join our mission to raise awareness about Hepatitis B and make a difference in our community.</p>
+      <div class="container hero-inner">
+        <h1>Team HBV Irvington</h1>
+        <p class="lead">We engage, learn, and make a difference. Join our team to design solutions that matter.</p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="about.html">Learn More</a>
+          <a class="btn-outline" href="contact.html">Get in Touch</a>
+        </div>
+      </div>
     </section>
-</main>
-<footer>
-    <p>© 2025 Team HBV Irvington | <a href="https://instagram.com/ihs.teamhbv">@ihs.teamhbv</a></p>
-</footer>
-<script src="js/script.js"></script>
+
+    <section class="container who-are-we">
+      <h2>Who are we</h2>
+      <p>Team HBV Irvington is a student-led team focused on education, outreach, and hands-on projects that improve community health literacy and provide real-world STEM experience.</p>
+    </section>
+
+    <section class="container what-is-teamhbv">
+      <h2>What is Team HBV Irvington</h2>
+      <p>We are a chapter of student volunteers that organize study sessions, outreach, and events centered on hepatitis B awareness and STEM learning. Core activities include:</p>
+      <ul>
+        <li><strong>USABO prep</strong> — structured biology Olympiad study groups and resources for students preparing for the USA Biology Olympiad.</li>
+        <li><strong>Service opportunities that make a difference</strong> — health education workshops, local screening drives, and community outreach projects.</li>
+        <li><strong>Annual conference</strong> — a day-long student conference with workshops, guest speakers, and project showcases.</li>
+      </ul>
+    </section>
+
+    <section class="container why-join">
+      <h2>Why you should join</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Skills</h3>
+          <p>Gain real technical and soft skills: lab skills, public speaking, teamwork, and project management.</p>
+        </article>
+        <article class="card">
+          <h3>Impact</h3>
+          <p>Make measurable community impact through outreach and service projects that directly help people.</p>
+        </article>
+        <article class="card">
+          <h3>Opportunities</h3>
+          <p>Connect with mentors, compete in science events, and build a portfolio for college applications.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container latest">
+      <h2>Latest meeting snapshot</h2>
+      <div class="recap">
+        <h3>Placeholder: Monthly meeting recap</h3>
+        <p class="meta">Date — Short summary</p>
+        <p>Replace this with your most recent meeting notes: attendance, decisions, action items, and next meeting date.</p>
+        <a class="btn-link" href="recaps.html">All recaps</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Team HBV Irvington</div>
+      <div class="footer-links">
+        <a href="https://instagram.com/ihs.teamhbv" id="footer-instagram" target="_blank" rel="noopener">@ihs.teamhbv</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
-
-
-
