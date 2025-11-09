@@ -1,32 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team HBV Irvington</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Team HBV Irvington</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header>
-    <img src="images/logo.png" alt="Team HBV Irvington Logo" class="logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="officers.html">Officers</a>
-        <a href="recaps.html">Meeting Recaps</a>
-        <a href="events.html">Events & Deadlines</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-<main>
-    <section class="hero">
-        <h1>Welcome to Team HBV Irvington</h1>
-        <p>Join our mission to raise awareness about Hepatitis B and make a difference in our community.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo-link" href="index.html"><img src="images/logo.png" alt="Team HBV Irvington logo" class="logo"></a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="officers.html" class="nav-link">Officers</a>
+        <a href="recaps.html" class="nav-link">Meeting Recaps</a>
+        <a href="events.html" class="nav-link">Events & Deadlines</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="external-buttons">
+        <button id="btn-instagram-2" class="btn-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"></path></svg>
+        </button>
+        <a class="btn-ghost" href="mailto:teamhbvirvington@gmail.com" target="_blank" rel="noopener">Email</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span class="hamburger"></span></button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>About Team HBV Irvington</h1>
+    <p class="lead">Team HBV Irvington is a student-led organization working to increase awareness of hepatitis B while providing STEM learning opportunities and community service.</p>
+
+    <section>
+      <h2>What is Team HBV as an organization?</h2>
+      <p>We are a student group that runs study programs, community outreach, and public health initiatives. Our chapters focus on empowering students with STEM skills while engaging in meaningful service related to hepatitis B awareness and prevention.</p>
     </section>
-</main>
-<footer>
-    <p>© 2025 Team HBV Irvington | <a href="https://instagram.com/ihs.teamhbv">@ihs.teamhbv</a></p>
-</footer>
-<script src="js/script.js"></script>
+
+    <section>
+      <h2>Jade Ribbon Campaign</h2>
+      <p>The Jade Ribbon Campaign is an international public health initiative focused on hepatitis B awareness, early detection, and reducing stigma—especially in Asian and Pacific Islander communities where HBV prevalence is higher. The campaign promotes education, testing/screening resources, and culturally-informed outreach. (Replace this summary with any local partner details or direct links if you want a specific citation or mission statement.)</p>
+      <p class="small">Tip: if you want an authoritative description or logo copy from the Jade Ribbon Campaign, I can add a sourced paragraph and link — tell me and I’ll fetch one.</p>
+    </section>
+
+    <section>
+      <h2>What is the Hepatitis B virus?</h2>
+      <p>Hepatitis B virus (HBV) infects the liver and is transmitted through blood and certain body fluids. It can cause an acute infection and, in some people, a chronic infection that increases risk of liver damage, cirrhosis, and liver cancer. Vaccination is available and highly effective at preventing infection; testing and early care are important.</p>
+      <p class="small">This website provides introductory information. For medical advice or diagnosis, always consult a healthcare professional.</p>
+    </section>
+
+    <div style="margin-top:18px;">
+      <a href="index.html" class="btn-outline">Back to Home</a>
+      <button onclick="history.back();" class="btn-ghost">Go back</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year-2"></span> Team HBV Irvington</div>
+      <div class="footer-links"><a href="https://instagram.com/ihs.teamhbv" target="_blank" rel="noopener">@ihs.teamhbv</a></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
