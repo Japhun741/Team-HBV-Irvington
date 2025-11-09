@@ -1,3 +1,6 @@
+/* ========== IMPORT FONTS ========== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lato:wght@700;900&display=swap');
+
 /* ========== GENERAL RESET & BASE STYLES ========== */
 * {
   margin: 0;
@@ -10,10 +13,16 @@ html {
 }
 
 body {
-  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
   background-color: #ffffff;
   color: #111;
   line-height: 1.6;
+}
+
+/* ========== TITLES ========== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
 /* ========== LAYOUT HELPERS ========== */
@@ -177,6 +186,50 @@ section p {
   max-width: 800px;
   margin: 0.5rem auto;
   text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+/* ======= WHO ARE WE SECTION ======= */
+.who-are-we {
+  text-align: center;
+  background: linear-gradient(135deg, #00e6e6 0%, #ffffff 100%);
+  border-radius: 15px;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.who-are-we p {
+  color: #000;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* ======= WHAT IS TEAM HBV SECTION ======= */
+.what-is-teamhbv {
+  text-align: center;
+  background: linear-gradient(135deg, #dff9ff 0%, #f8ffff 100%);
+  border-radius: 15px;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.what-is-teamhbv ul {
+  list-style: none;
+  padding-left: 0;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.what-is-teamhbv li {
+  background: rgba(0, 255, 255, 0.1);
+  margin: 0.8rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #000;
+  font-family: "Inter", sans-serif;
 }
 
 /* Grid for "Why Join" */
@@ -270,4 +323,3 @@ section p {
     gap: 1rem;
   }
 }
-
