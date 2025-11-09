@@ -36,7 +36,7 @@
 .logo {
   display: block;
   margin: 0 auto;
-  width: 80%;            /* adjust to make it smaller/larger */
+  width: 20%;            /* adjust to make it smaller/larger */
   max-width: 1000px;     /* prevents huge stretching */
   height: auto;
   cursor: pointer;
@@ -94,7 +94,7 @@
 /* ====== RESPONSIVE BEHAVIOR ====== */
 @media (max-width: 768px) {
   .logo {
-    width: 95%;
+    width: 20%;
     max-width: 600px;
   }
 
