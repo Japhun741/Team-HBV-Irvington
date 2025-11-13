@@ -270,3 +270,33 @@ body::before {
   .hero h1 { font-size: 2rem; }
   .info, .why-join { padding: 1.5rem; }
 }
+
+/* ===== INFO BUTTONS ===== */
+.button-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.info-btn {
+  display: block;
+  text-decoration: none;
+  background: #009688;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.info-btn:hover {
+  background: #26a69a;
+  transform: translateY(-2px);
+}
+
+.info-btn strong {
+  font-weight: 700;
+}
+
