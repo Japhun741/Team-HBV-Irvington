@@ -300,3 +300,46 @@ body::before {
   font-weight: 700;
 }
 
+/* ===== INFO CARDS ===== */
+.info-cards {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  color: #333;
+}
+
+.card strong {
+  color: #008080;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+  background: #f0fdfd;
+}
+
