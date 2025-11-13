@@ -343,3 +343,29 @@ body::before {
   background: #f0fdfd;
 }
 
+/* ===== DIPLOMATA HEADINGS ===== */
+.info-cards h2,         /* "What is Team HBV Irvington?" */
+.why-join h2,           /* "Why You Should Join?" */
+.card strong,           /* USABO Prep, Service Opportunities, Annual Conference */
+.panel-text h3 {        /* Community Outreach, Education and Empowerment, Student Leadership */
+  font-family: 'Diplomata', cursive;
+}
+
+/* Center the "What is Team HBV Irvington?" text */
+.info-cards h2 {
+  text-align: center;
+  color: #00796b; /* same as Why You Should Join? */
+  margin-bottom: 2rem;
+}
+
+/* Make sure panel titles are colored teal/aqua */
+.panel-text h3 {
+  color: #008080; /* keeps your card headings teal */
+}
+
+/* Card strong text for buttons */
+.card strong {
+  color: #008080; /* keep consistent with card headings */
+  display: block;
+  margin-bottom: 0.5rem;
+}
