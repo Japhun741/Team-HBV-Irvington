@@ -1,4 +1,25 @@
-/* ===== HEADER (updated alignment) ===== */
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+/* ====================================
+   GLOBAL PAGE STYLE (matches home page)
+   ==================================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  color: #333;
+}
+
+
+
+/* ====================================
+   HEADER + LOGO + NAVBAR (same as home)
+   ==================================== */
+
+/* HEADER WRAPPER */
 .site-header {
   display: flex;
   flex-direction: column;
@@ -9,7 +30,7 @@
   box-sizing: border-box;
 }
 
-/* Ensures logo area is fully centered and image doesn’t shift */
+/* LOGO AREA — ALWAYS CENTERED */
 .header-logo {
   width: 100%;
   display: flex;
@@ -36,10 +57,10 @@
   transform: scale(1.05);
 }
 
-/* ===== NAVBAR (keep this same look across all pages) ===== */
+/* NAVBAR (IDENTICAL ACROSS ALL PAGES) */
 .main-nav {
   width: 100%;
-  background: #004d4d; /* rich teal background */
+  background: #004d4d;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -49,9 +70,10 @@
 }
 
 .main-nav a {
-  color: #a7ffeb; /* aqua link color */
+  color: #a7ffeb;
   text-decoration: none;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -63,7 +85,7 @@
   bottom: -4px;
   width: 0%;
   height: 2px;
-  background: #26a69a; /* lighter teal accent */
+  background: #26a69a;
   transition: width 0.3s ease;
 }
 
@@ -75,7 +97,80 @@
   width: 100%;
 }
 
-/* ===== RESPONSIVE ===== */
+
+/* ====================================
+   CONTACT PAGE CONTENT STYLING
+   ==================================== */
+
+/* Cinzel Headings — matches home page */
+h1, h2, h3, .section-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: #00796b;
+  text-align: center;
+}
+
+/* Contact info container */
+.contact-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Text fields, labels, etc */
+.contact-container p,
+.contact-container label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Form inputs */
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #b2dfdb;
+  background: #f9ffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #26a69a;
+  outline: none;
+  box-shadow: 0 0 6px rgba(38,166,154,0.3);
+}
+
+/* Submit button theme */
+.contact-container button {
+  background: #00796b;
+  color: white;
+  padding: 0.9rem 1.4rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-container button:hover {
+  background: #009688;
+  transform: translateY(-3px);
+}
+
+
+
+/* ====================================
+   RESPONSIVE
+   ==================================== */
 @media (max-width: 768px) {
   .logo {
     width: 70%;
@@ -89,5 +184,10 @@
 
   .main-nav a {
     font-size: 0.95rem;
+  }
+
+  .contact-container {
+    margin: 1rem;
+    padding: 1.5rem;
   }
 }
