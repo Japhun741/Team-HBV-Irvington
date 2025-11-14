@@ -47,17 +47,26 @@ body::before {
 }
 
 .header-logo {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem 0;
 }
 
-.header-logo .logo {
-  margin: 0 auto !important;
-  display: block;
+.header-logo .logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.header-logo .logo {
+  display: block;
+  max-width: 450px;
+  width: 50%;
+  height: auto;
+}
+
 
 
 .main-nav {
