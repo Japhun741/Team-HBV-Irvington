@@ -85,32 +85,43 @@ body {
 
 /* ================= CONTACT PAGE ================= */
 
-/* Wrapper centers and adds spacing */
 .contact-wrapper {
   max-width: 900px;
-  margin: 2.5rem auto;
+  margin: 3rem auto;
   padding: 2rem;
 }
 
-/* Title styling */
 .contact-title {
   font-family: 'Cinzel', serif;
-  font-size: 2.3rem;
+  font-size: 2.6rem;
   text-align: center;
-  color: #00796b;
+  color: #00695c;
   margin-bottom: 1.5rem;
 }
 
-/* Contact info styling */
+
+
+/* ---------------- CONTACT INFO ---------------- */
 .contact-info {
   text-align: center;
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.info-item {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.info-label {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  color: #004d40;
 }
 
 .contact-info a {
   color: #00796b;
   font-weight: bold;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
@@ -119,69 +130,71 @@ body {
 }
 
 
-/* Form card */
+
+/* ---------------- FORM CARD ---------------- */
 .contact-form {
   background: white;
-  padding: 2rem 2.5rem;
-  border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  padding: 2.4rem 2.8rem;
+  border-radius: 22px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.16);
+  border-top: 6px solid #00796b;
 }
 
 /* Input groups */
 .input-group {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
 }
 
 .input-group label {
   display: block;
   font-family: 'Cinzel', serif;
-  color: #004d40;
-  margin-bottom: 0.4rem;
-  font-size: 1.05rem;
+  color: #003d33;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Inputs + textareas */
+/* Inputs */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.9rem;
+  padding: 1rem;
   border: 1px solid #b2dfdb;
-  border-radius: 10px;
-  background: #f9ffff;
+  border-radius: 12px;
+  background: #faffff;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   transition: 0.3s ease;
 }
 
 .contact-form textarea {
-  height: 140px;
+  height: 150px;
   resize: vertical;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #26a69a;
+  border-color: #009688;
+  box-shadow: 0 0 8px rgba(0,150,136,0.35);
   outline: none;
-  box-shadow: 0 0 6px rgba(38,166,154,0.3);
 }
 
 /* Submit button */
 .contact-form button {
+  width: 100%;
+  padding: 1rem;
   background: #00796b;
   color: white;
-  padding: 0.9rem 1.4rem;
+  font-size: 1.2rem;
   border: none;
-  border-radius: 10px;
-  font-size: 1.1rem;
+  border-radius: 12px;
   cursor: pointer;
+  margin-top: 0.8rem;
   transition: 0.3s ease;
-  width: 100%;
-  margin-top: 0.5rem;
 }
 
 .contact-form button:hover {
   background: #009688;
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 
@@ -199,6 +212,6 @@ body {
   }
 
   .contact-form {
-    padding: 1.5rem;
+    padding: 1.6rem;
   }
 }
