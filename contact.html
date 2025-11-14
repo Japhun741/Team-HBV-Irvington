@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="contact.css">
 
 <header class="site-header">
-  <div class="header-logo">
+  <div class="contact-container">
     <a href="index.html" class="logo-link">
     <img src="https://github.com/Japhun741/Team-HBV-Irvington/blob/main/THE%20FINAL%20ONE.png?raw=true" 
          alt="Team HBV Irvington Logo" class="logo">
@@ -17,19 +17,27 @@
   
 </header>
 
-
 <h1>Contact Us</h1>
-<p>Email us at: <a href="mailto:teamhbvirvington@gmail.com">teamhbvirvington@gmail.com</a></p>
-<p>Follow us on Instagram: <a href="https://instagram.com/ihs.teamhbv" target="_blank">@ihs.teamhbv</a></p>
 
+ <p>Email us at: 
+    <a href="mailto:teamhbvirvington@gmail.com">teamhbvirvington@gmail.com</a>
+  </p>
 
-<link rel="stylesheet" href="contact.css">
+  <p>Follow us on Instagram: 
+    <a href="https://instagram.com/ihs.teamhbv" target="_blank">@ihs.teamhbv</a>
+  </p>
 
+  <form action="https://formspree.io/f/myzlgdge" method="POST">
+    <label>Your Name</label>
+    <input type="text" name="name" placeholder="Your Name" required>
 
+    <label>Your Email</label>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
 
-<form action="https://formspree.io/f/myzlgdge" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="_replyto" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send</button>
-</form>
+    <label>Your Message</label>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+</div>
