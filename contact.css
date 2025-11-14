@@ -270,15 +270,3 @@ body::before {
 
 /* small visual niceties */
 a { color: inherit; }
-
-
-/* Ensure nav menu is perfectly centered under logo */
-.main-nav {
-  width: 100%;
-  background: var(--teal-900);
-  display: flex;
-  justify-content: center;
-  align-items: center; /* new */
-  gap: 1.4rem;
-  padding: 1rem 0;
-}
