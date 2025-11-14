@@ -47,25 +47,27 @@ body::before {
 }
 
 .header-logo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 1rem 0 !important;
 }
 
 .header-logo .logo-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .header-logo .logo {
-  display: block;
-  max-width: 450px;
-  width: 50%;
-  height: auto;
+  display: block !important;
+  margin: 0 auto !important;
+  max-width: 450px !important;
+  width: 50% !important;
+  height: auto !important;
 }
+
 
 
 
