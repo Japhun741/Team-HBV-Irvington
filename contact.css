@@ -47,19 +47,18 @@ body::before {
 }
 
 .header-logo {
-  width:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:1rem 0;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+  padding: 1rem 0;
 }
 
-.logo {
-  width:50%;
-  max-width:450px;
-  height:auto;
-  display:block;
+.header-logo .logo {
+  margin: 0 auto !important;
+  display: block;
 }
+
 
 .main-nav {
   width:100%;
