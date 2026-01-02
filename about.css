@@ -34,13 +34,22 @@ body::before {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1rem 0;
 }
 
+.logo-link {
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
+  display: block;
+  margin: 0 auto;
   width: 50%;
   max-width: 450px;
 }
+
 
 .main-nav {
   width: 100%;
@@ -135,24 +144,35 @@ body::before {
 
 /* ===== CTA ===== */
 .about-cta {
+  width: 100%;
   text-align: center;
   background: linear-gradient(to right, #a7ffeb, #e0f7fa);
-  padding: 3rem 2rem;
-  border-radius: 18px;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+  padding: 4rem 1.5rem;
 }
+
+.about-panel {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-panel:hover {
+  transform: scale(1.03);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.14);
+}
+
 
 .about-cta h3 {
   font-family: 'Cinzel', serif;
   color: #004d4d;
-  font-size: 1.9rem;
-  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about-cta p {
-  margin-bottom: 1.5rem;
-  color: #333;
+  max-width: 700px;
+  margin: 0 auto 1.8rem;
+  font-size: 1.05rem;
 }
+
 
 .about-btn {
   display: inline-block;
