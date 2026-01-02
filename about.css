@@ -1,4 +1,27 @@
-/* ===== HEADER (updated alignment) ===== */
+/* ========== GLOBAL ========== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  line-height: 1.6;
+}
+
+/* subtle texture like homepage */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+}
+
+/* ========== HEADER (same as home) ========== */
 .site-header {
   display: flex;
   flex-direction: column;
@@ -6,54 +29,35 @@
   background: #fff;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   width: 100%;
-  box-sizing: border-box;
 }
 
-/* Ensures logo area is fully centered and image doesn’t shift */
 .header-logo {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 1rem 0;
-  text-align: center;
-}
-
-.logo-link {
-  display: inline-block;
 }
 
 .logo {
-  display: block;
   width: 50%;
   max-width: 450px;
   height: auto;
-  margin: 0 auto;
-  transition: transform 0.3s ease;
 }
 
-.logo:hover {
-  transform: scale(1.05);
-}
-
-/* ===== NAVBAR (keep this same look across all pages) ===== */
 .main-nav {
   width: 100%;
-  background: #004d4d; /* rich teal background */
+  background: #004d4d;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 1.5rem;
   padding: 1rem 0;
-  box-sizing: border-box;
 }
 
 .main-nav a {
-  color: #a7ffeb; /* aqua link color */
+  color: #a7ffeb;
   text-decoration: none;
   font-weight: 600;
   position: relative;
-  transition: color 0.3s ease;
 }
 
 .main-nav a::after {
@@ -63,7 +67,7 @@
   bottom: -4px;
   width: 0%;
   height: 2px;
-  background: #26a69a; /* lighter teal accent */
+  background: #26a69a;
   transition: width 0.3s ease;
 }
 
@@ -75,19 +79,86 @@
   width: 100%;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ========== ABOUT PAGE ========== */
+.about-page {
+  padding: 3rem 1rem 4rem;
+}
+
+.about-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.4rem;
+  color: #00796b;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* content cards (clean + premium) */
+.about-card {
+  background: white;
+  border-radius: 14px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.about-card h2 {
+  font-family: 'Cinzel', serif;
+  color: #008080;
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.about-card p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.about-card a {
+  color: #00796b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.about-card a:hover {
+  text-decoration: underline;
+}
+
+/* ========== FOOTER ========== */
+.site-footer {
+  background: #004d4d;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.site-footer a {
+  color: #a7ffeb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-footer a:hover {
+  color: white;
+}
+
+/* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .logo {
     width: 70%;
-    max-width: 300px;
   }
 
-  .main-nav {
-    gap: 1rem;
-    padding: 0.8rem 0;
+  .page-title {
+    font-size: 2rem;
   }
 
-  .main-nav a {
-    font-size: 0.95rem;
+  .about-card {
+    padding: 1.5rem;
   }
 }
